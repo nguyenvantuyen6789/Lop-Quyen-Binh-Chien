@@ -1,0 +1,7 @@
+services:
+  demo01-sboot:
+    build: ./Demo01_SBoot_Docker
+    container_name: demo01-sboot
+    ports:
+      - "8081:8081"
+

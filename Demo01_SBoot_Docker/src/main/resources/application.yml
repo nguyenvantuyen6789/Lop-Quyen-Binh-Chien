@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: demo01-sboot
+
+server:
+  port: 8081
