@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: agi-gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: product-service
+              uri: http://localhost:8081
+              predicates:
+                - Path=/product-service/**
+server:
+  port: 8080
